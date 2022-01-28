@@ -78,13 +78,13 @@ namespace Algoritm
         /// <summary>
         /// RecMethod Fibo
         /// </summary
-       public static void FiboNumRec(ref int n, int a = 1, int b = 0, int f = 0)
+       public static void FiboNumRec(ref int n, int a = 1, int b = 0, int Fibo = 0)
         {
-            f = a + b; b = a;  a = f;
-            if (f <= n)
+            Fibo = a + b; b = a;  a = Fibo;
+            if (Fibo <= n)
             {
-                Console.WriteLine(f);
-                FiboNumRec(ref n, a, b,f);
+                Console.WriteLine(Fibo);
+                FiboNumRec(ref n, a, b,Fibo);
             }
         }
     }
