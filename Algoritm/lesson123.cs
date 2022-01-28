@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algoritm
+namespace Algoritm1
 {
-    public static class lesson1
+    public static class lesson123
     {
         //Напишите на C# функцию согласно блок-схеме/
         /// <summary>
         /// Определить четность число
         /// </summary>
         /// <param name="n"></param>
-        public static void  MainAlgoritm(int n)
+        public static void  GetMainAlgoritm(int n)
         {
             int i = 2;
             int d = 0;
@@ -70,7 +70,8 @@ namespace Algoritm
             while (true)
             {
                 f = a + b; b = a;  a = f;
-                if (f <= n) Console.WriteLine(f);
+                if (f <= n) 
+                    Console.WriteLine(f);
                 else
                     break;
             }
@@ -78,13 +79,13 @@ namespace Algoritm
         /// <summary>
         /// RecMethod Fibo
         /// </summary
-       public static void FiboNumRec(ref int n, int a = 1, int b = 0, int Fibo = 0)
+       public static void FiboNumRec(ref int num, int a = 1, int b = 0, int Fibo = 0)
         {
             Fibo = a + b; b = a;  a = Fibo;
-            if (Fibo <= n)
+            if (Fibo <= num)
             {
                 Console.WriteLine(Fibo);
-                FiboNumRec(ref n, a, b,Fibo);
+                FiboNumRec(ref num, a, b,Fibo);
             }
         }
     }
