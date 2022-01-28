@@ -60,7 +60,7 @@ namespace Algoritm
             return sum;
         }
         /// <summary>
-        /// Числа FIbo методом цикла
+        /// Числа FIbo method FOR
         /// </summary>
        public static void FiboNumFor(ref int n)
         {
